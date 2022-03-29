@@ -1,0 +1,28 @@
+body {
+    background-color: #625750;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h3 {
+    color: #87bdd8;
+    text-transform: capitalize;
+}
+
+span.my-highlight {
+    color: #d4ac6e;
+    font-weight: bold;
+}
+
+a {
+    color: #f18973;
+}
+
+img.mode {
+    width: 30vw;
+}
+
+img.validator {
+    width: 5vw;
+}
