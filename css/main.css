@@ -26,3 +26,7 @@ img.mode {
 img.validator {
     width: 5vw;
 }
+
+.favourite-hints {
+    font-style: italic;
+}
