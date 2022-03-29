@@ -2,6 +2,7 @@ body {
     background-color: #625750;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
 }
 
 h1,
@@ -17,6 +18,11 @@ span.my-highlight {
 
 a {
     color: #f18973;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 img.mode {
