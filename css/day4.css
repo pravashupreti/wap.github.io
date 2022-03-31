@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #A2CBBC;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header>span {
+    font-size: 0.6em;
+    padding: 0 40px;
+}
+
+form>.form-info {
+    padding: 15px 25px;
+    text-decoration: underline;
+}
+
+.input-sections {
+    padding: 0 25px;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.input-element {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+    padding-left: 0;
+}
+
+.input-element>label {
+    margin-right: 50px;
+    font-weight: bold;
+    /* margin-top: auto; */
+    margin-bottom: auto;
+}
+
+.input-element>input {
+    margin: 0;
+    padding: 0;
+    min-width: 175px;
+    height: 25px;
+}
+
+.input-element>textarea {
+    margin: 0;
+    padding: 0;
+    min-width: 175px;
+    resize: none;
+}
+
+.input-element>select {
+    margin: 0;
+    padding: 0;
+    min-width: 175px;
+    height: 25px;
+}
+
+.input-element>.form-sub-section-label {
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+label>span {
+    color: red;
+}
+
+.checklist-row {
+    display: flex;
+    flex-direction: column;
+    min-width: 175px;
+}
+
+.footer-section {
+    background-color: #E3E3E3;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.footer-section>div {
+    /* background-color: #7AA897; */
+}
+
+.footer-section>div>input {
+    margin: 0 15px;
+    color: white;
+    border: none;
+    background-color: #7AA897;
+    height: 4vh;
+    width: 15vh;
+}
