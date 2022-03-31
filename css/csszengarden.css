@@ -104,7 +104,7 @@ nav>ul {
 /* Start of main */
 
 .main {
-    padding: 40px;
+    padding: 0 40px;
 }
 
 .main>div>h3 {
@@ -122,6 +122,7 @@ nav>ul {
 footer {
     display: flex;
     justify-content: space-around;
+    margin: 50px auto;
 }
 
 footer>a {
