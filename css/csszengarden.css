@@ -1,0 +1,142 @@
+/* extra: #f9d5e5
+
+tertiary : #eeac99
+
+secondary: #e06377
+
+primary: #c83349 */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px 75px;
+}
+
+header>h1 {
+    font-size: 4em;
+}
+
+header>h2 {
+    font-size: 2em;
+    font-style: italic;
+}
+
+header>h2>abbr {
+    font-weight: 500;
+}
+
+.page-wrapper>section {
+    margin: 0;
+    padding: 0;
+}
+
+section>header {
+    background-color: #f9d5e5;
+    color: #c83349;
+}
+
+.summary,
+.preamble {
+    padding: 0 40px;
+}
+
+.summary>h3,
+.preamble>h3 {
+    color: #e06377;
+}
+
+
+/* Aside CSS Style */
+
+aside {
+    /* padding: 0px 10px; */
+    /* background-color: #eeac99; */
+    /* color: #fff; */
+    min-width: 40vh;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: #e06377;
+}
+
+nav>ul>li {
+    list-style: none;
+    padding: 10px;
+}
+
+nav>ul>li:hover {
+    background-color: #f9d5e5;
+}
+
+nav>ul {
+    padding: 0;
+    margin: 0;
+}
+
+.design-selection>h3,
+.design-archives>h3,
+.zen-resources>h3 {
+    background-color: #c83349;
+    color: #f9d5e5;
+    padding: 10px;
+    margin: 0;
+}
+
+
+/* End of aside */
+
+
+/* Start of main */
+
+.main {
+    padding: 40px;
+}
+
+.main>div>h3 {
+    color: #e06377;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+
+/* End of main */
+
+
+/* Start of footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer>a {
+    padding: 20px;
+    border-radius: 50px;
+    border: 3px solid;
+    /* height: 25px;
+    width: 25px; */
+}
+
+
+/* End of footer */
+
+
+/* 
+div {
+    border: 1px solid;
+} */
