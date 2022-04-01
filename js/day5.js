@@ -5,13 +5,8 @@ function sum(list) {
 let numberList = [10, 20, 30, 40, 50]
 console.log(sum(numberList))
 
-function getNewArray(list) {
-    return list.filter(x => {
-            return x.length >= 5
-        })
-        .filter(x => {
-            return x.indexOf('a') > 0
-        })
+let getNewArray = function(list) {
+    return list.filter(x => x.length >= 5 && x.indexOf('a') > 0)
 }
 
 let stringList = [
