@@ -14,9 +14,11 @@ function LinkedList() {
 
     this.add = function(val) {
         if (this.head) {
-            let tmp = this.head;
-            this.head = new Node(val)
-            this.head.next = tmp
+            let lastnode = this.head
+            while (lastnode.next) {
+                lastnode = lastnode.next
+            }
+            lastnode.next = new Node(val)
 
         } else {
             this.head = new Node(val)
@@ -30,10 +32,11 @@ function LinkedList() {
             return
         }
         let str = "LinkedList: {"
-        do {
+        while (node.next) {
             str += node.val + ","
             node = node.next
-        } while (node.next)
+        }
+
         str += node.val
         str += "}"
             // print last node
@@ -42,30 +45,20 @@ function LinkedList() {
 
     this.remove = function(val) {
         let node = this.head
-        let prev = this.head
+        let prev = null
 
-        // handle first node 
-
-        if (node.val === val) {
-            this.head = this.head.next
-            return
-        }
-
-
-        do {
+        while (node) {
 
             if (node.val === val) {
-                prev.next = node.next
+                if (prev == null) {
+                    this.head = this.head.next
+                } else {
+                    prev.next = node.next
+                }
                 return
             }
             prev = node
             node = node.next
-
-        } while (node.next)
-
-        // handle last node
-        if (node.val === val) {
-            prev.next = null
 
         }
 
@@ -83,4 +76,7 @@ linkedlist.print()
 
 linkedlist.remove(2)
 
+linkedlist.print()
+
+linkedlist.remove(3)
 linkedlist.print()
