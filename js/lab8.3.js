@@ -1,4 +1,4 @@
-// Q1.
+// Q3.
 "use strict";
 
 Array.prototype.sort = function() {
