@@ -1,0 +1,25 @@
+Q1. 
+
+Array.prototype.even = function() {
+    return this.filter(x => x % 2 === 0)
+}
+
+Array.prototype.odd = function() {
+    return this.filter(x => x % 2 !== 0)
+}
+
+console.log([1, 2, 3, 4, 5, 6, 7, 8].even());
+console.log([1, 2, 3, 4, 5, 6, 7, 8].odd());
+
+
+
+Q2.1. 
+
+setImmediate() is designed to execute a script once the current poll phase completes.
+setTimeout() schedules a script to be run after a minimum threshold in ms has elapsed.
+
+
+
+Q2.2. 
+
+Q2.3. Nodejs does not have a window object
