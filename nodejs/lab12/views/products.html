@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>
+        product page
+    </title>
+</head>
+
+<body>
+
+    <a href="/">home</a>
+
+    <form action="/products" method="post">
+        <label for="product">Product</label>
+        <input id="product" type="text" name="product" autofocus />
+        <input type="submit">
+    </form>
+
+    <p>List of products</p>
+    <ul>
+        <% for(var i=0; i < products.length; i++) { %>
+            <li>
+                <%= products[i] %>
+            </li>
+            <% } %>
+    </ul>
+
+</body>
+
+</html>
