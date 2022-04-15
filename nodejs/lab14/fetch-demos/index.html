@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fetch Demo</title>
+    <!-- <script src="main-promise.js"></script> -->
+    <script src="main-asyncawait.js"></script>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="getProdsBtn">Get Products</button>
+
+    <div id="products">
+
+    </div>
+
+
+    <br>
+    <br>
+    <form id="prodForm">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price" min="1"><br><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea>
+        <button id="addProdBtn">Add new Product</button>
+    </form>
+
+</body>
+
+</html>

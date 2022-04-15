@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Pravash Raj Upreti">
+    <title>Library System</title>
+
+    <link href="./resources/bootstrap.min.css" rel="stylesheet">
+    <link href="./resources/carousel.css" rel="stylesheet">
+    <!-- <script src="./resources/bootstrap.bundle.min.js"></script> -->
+    <script src="./resources/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Library Management System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="nav-home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <br>
+        <div class="container marketing">
+            <div id="books" class="row">
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-12">
+                    <h2 class="featurette-heading" id="book-heading">Add a new book</h2>
+                    <p class="lead">
+                        <form id="book-form">
+                            <div class="mb-3">
+                                <label for="title" class="form-label">Title</label>
+                                <input type="text" class="form-control" id="title">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="isbn" class="form-label">ISBN</label>
+                                <input type="text" class="form-control" id="isbn">
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="published-date" class="form-label">Published Date</label>
+                                <input type="date" class="form-control" id="published-date">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="author" class="form-label">Author</label>
+                                <input type="text" class="form-control" id="author">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="book-btn">Submit</button>
+                        </form>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
